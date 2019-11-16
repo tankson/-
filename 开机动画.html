@@ -45,4 +45,17 @@
               </div>
     
 </body>
+<script>
+    let btn = document.querySelector('#closeButton');
+    let bottomPart = document.querySelector('#bottomPart');
+    let box = document.querySelector('.box');
+    btn.onclick = function(){
+        bottomPart.style.height = 0;
+    }
+    bottomPart.addEventListener('transitionend',function(){
+        box.style.width = 0;
+    })
+    
+    
+</script>
 </html>
